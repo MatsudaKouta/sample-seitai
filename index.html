@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/c30333f671.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>samplesite</title>
+  </head>
+  <body>
+    <header>
+      <div class="hd-wrap">
+        <h1 class="hd-logo">〇〇整体院</h1>
+        <nav class="pc-nav">
+          <ul>
+            <li><a href="#about">〇〇整体院について</a></li>
+            <li><a href="#menu">施術メニュー</a></li>
+            <li><a href="#practitioner">施術者</a></li>
+            <li><a href="#contact">ご予約</a></li>
+            <li><a href="#access">アクセス</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="first-v">
+        <div class="first-v__wrap">
+          <h2 class="main-title">体と。心を癒す整体</h2>
+          <div class="first-txt">
+            <p>日ごろの体の疲れ・凝りをほぐしたい方</p>
+            <p>産後の骨盤を矯正したい方</p>
+            <p>リラックスしたい方</p>
+            <p>それぞれの目的にあった施術をいたします。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="inner">
+          <h3 class="sub-title">〇〇整体院について</h3>
+          <div class="about-wrap">
+            <p>
+              ひとりひとりの体の不調に対し真摯に向き合いベストな施術を提供いたします
+            </p>
+            <p>下の項目に当てはまる方はぜひ一度ご相談ください。</p>
+            <p>〇疲れ・凝りを取りたい方</p>
+            <p>〇産後の骨盤を矯正したい方</p>
+            <p>〇ストレスで節々に不調を感じる方</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu">
+        <div class="inner">
+          <h3 class="sub-title">施術メニュー</h3>
+          <div class="menu-wrap">
+            <div class="menu-item">
+              <img src="img/sample2.jpg" alt="総合コースイメージ写真です">
+              <h4 class="menu-title">総合コース</h4>
+              <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+            </div>
+            <div class="menu-item">
+              <img src="img/sample3.jpg" alt="骨盤矯正コースイメージ写真です">
+              <h4 class="menu-title">骨盤矯正コース</h4>
+              <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+            </div>
+            <div class="menu-item">
+              <img src="img/sample1.jpg" alt="ストレス解消コースイメージ写真です">
+              <h4 class="menu-title">ストレス解消コース</h4>
+              <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="practitioner">
+        <div class="inner">
+          <h3 class="sub-title">施術者</h3>
+          <div class="prac-wrap">
+            <img src="img/sezyutu.jpg" alt="施術者の写真" />
+            <p>吉田真奈美</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="inner">
+          <h3 class="sub-title">ご予約</h3>
+          <div class="contact-wrap">
+            <p>ご予約・お体の相談は下記まで</p>
+            <p>下記フォームへの入力をお願いいたします。</p>
+            <form
+              action="https://api.staticforms.xyz/submit"
+              method="post"
+              class="contact-form"
+            >
+              <div class="contact-item">
+                <p>お名前</p>
+                <input
+                  id="patient"
+                  type="text"
+                  name="$お名前"
+                  placeholder="例：吉田真奈美"
+                />
+              </div>
+              <div class="contact-item">
+                <p>メールアドレス</p>
+                <input
+                  id="email"
+                  type="text"
+                  name="$email"
+                  placeholder="例：〇〇@〇〇.jp"
+                />
+              </div>
+              <div class="contact-item">
+                <p>お問い合わせ内容</p>
+                <textarea
+                  id="question"
+                  name="$問い合わせ内容"
+                  class="form-q"
+                ></textarea>
+              </div>
+              <input type="text" name="honeypot" style="display: none" />
+              <input
+                type="hidden"
+                name="accessKey"
+                value="d8db9e64-8977-420b-970f-e6be661c1a5a"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="portfolioサイトからの問い合わせ"
+              />
+              <input type="hidden" name="replyTo" value="@" />
+              <input
+                type="hidden"
+                name="redirectTo"
+                value="file:///C:/Users/kou87/onedrive/portfolio/index.html"
+              />
+              <input
+                id="submit"
+                type="submit"
+                value="送信"
+                class="contact-submit"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="access">
+        <div class="inner">
+          <h3 class="sub-title">アクセス</h3>
+          <div class="access-wrap">
+            <div class="access-item">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12948.958526746725!2d139.90594145!3d35.76948955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sja!2sjp!4v1600514555019!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+              <div class="access-p">
+                <p>北総線矢切駅徒歩20分</p>
+                <p>JR松戸駅バス10分</p>
+                <p>tel 〇〇〇ー〇〇ー〇〇〇〇</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="inner">
+        <nav class="footer-link">
+          <ul>
+            <li><a href="#about">〇〇整体院について</a></li>
+            <li><a href="#menu">施術メニュー</a></li>
+            <li><a href="#practitioner">施術者</a></li>
+            <li><a href="#contact">ご予約</a></li>
+            <li><a href="#access">アクセス</a></li>
+          </ul>
+        </nav>
+        <p>
+          copyright © 〇〇seitai, All Right Reserved.　　<a href="#"
+            ><i class="fab fa-twitter-square ft-tw"></i
+          ></a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

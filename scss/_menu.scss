@@ -1,0 +1,15 @@
+.menu-wrap {
+  margin-top: $mt;
+  display: flex;
+  justify-content: space-between;
+  .menu-item {
+    img {
+      height: 160px;
+      width: 200px;
+    }
+    .menu-title {
+      font-size: 1.6rem;
+      color: #707070;
+    }
+  }
+}

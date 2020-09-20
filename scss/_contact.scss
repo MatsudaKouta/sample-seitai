@@ -1,0 +1,38 @@
+.contact-wrap {
+    margin-top: $mt;
+}
+
+.contact-item {
+        padding-top: 20px;
+    }
+
+.contact-form{
+input{
+width: 40%;
+}
+}
+
+.form-q{
+    width: 40%;
+    height: 60px;
+}
+
+.contact-submit {
+  display       : inline-block;
+  border-radius : 45%;          /* 角丸       */
+  font-size     : 1.4rem;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 21px;   /* 余白       */
+  background    : rgba(0, 0, 102, 0.81);     /* 背景色     */
+  color         : rgba(255, 255, 255, 0.91);     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid rgba(0, 0, 102, 0.81);    /* 枠の指定 */
+  transition: opacity .3s;
+  &:hover{
+    opacity: 0.6;
+  }
+}
+
+

@@ -1,0 +1,14 @@
+#practioner {
+    margin-bottom: 20px;
+}
+
+.prac-wrap {
+    margin-top: $mt;
+    display: flex;
+    justify-content: center;
+    
+    img {
+     width: 30%;
+     margin-right: 20px;
+ }
+}

@@ -1,0 +1,72 @@
+/////////////////
+//    mixin   //
+/////////////////
+@mixin pc {
+  @media screen and (min-width: 960px) {
+    @content;
+  }
+}
+@mixin tab {
+  @media screen and (max-width: 959px) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: 600px) {
+    @content;
+  }
+}
+
+html {
+  font-size: 62.6%;
+}
+
+body {
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+  font-family: "Lato", "Noto Sans JP", "ヒラギノ角ゴ ProN",
+    "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック",
+    "MS PGothic", sans-serif;
+}
+
+.hd-logo {
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  color: #707070;
+}
+
+.main-title {
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  color: #707070;
+}
+
+.sub-title {
+    margin-bottom: 30px;
+    font-weight: bold;
+    border:solid 4px #707070;
+    border-radius:20px;
+    font-size: 1.8rem;
+    color: #707070;
+    text-align: center;
+    width: 50%;
+    margin:0 auto;
+}
+
+.inner {
+  padding-top: 150px;
+  width: 100% - 17%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  color: #707070;
+}
+
+/////////////////
+//    変数   　//
+/////////////////
+$bgc:  #99FFCC; //サイト全体の背景色
+$pfont: 1.3rem; // pタグ　font-size
+$mt: 2.5rem; // 各アイテム　margin-top

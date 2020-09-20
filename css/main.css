@@ -1,0 +1,304 @@
+@charset "UTF-8";
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+html {
+  font-size: 62.6%;
+}
+
+body {
+  font-size: 1.3rem;
+  line-height: 2.6rem;
+  font-family: "Lato", "Noto Sans JP", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.hd-logo {
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  color: #707070;
+}
+
+.main-title {
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  color: #707070;
+}
+
+.sub-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+  border: solid 4px #707070;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  color: #707070;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.inner {
+  padding-top: 150px;
+  width: 83%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  color: #707070;
+}
+
+header {
+  margin: 30px;
+}
+
+.pc-nav {
+  margin: 20px 0 0 60%;
+}
+
+.pc-nav ul {
+  display: flex;
+}
+
+.pc-nav ul li {
+  font-size: 1.6rem;
+  color: #707070;
+}
+
+.pc-nav ul li:not(:first-child) {
+  padding-left: 8px;
+}
+
+.first-v {
+  width: 100%;
+  height: 400px;
+  background-color: #99FFCC;
+  max-width: 100%;
+}
+
+.first-v__wrap {
+  display: flex;
+  padding-top: 8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.first-v__wrap h2 {
+  padding-right: 20px;
+}
+
+.about-wrap {
+  margin-top: 2.5rem;
+}
+
+.menu-wrap {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-wrap .menu-item img {
+  height: 160px;
+  width: 200px;
+}
+
+.menu-wrap .menu-item .menu-title {
+  font-size: 1.6rem;
+  color: #707070;
+}
+
+#practioner {
+  margin-bottom: 20px;
+}
+
+.prac-wrap {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.prac-wrap img {
+  width: 30%;
+  margin-right: 20px;
+}
+
+.contact-wrap {
+  margin-top: 2.5rem;
+}
+
+.contact-item {
+  padding-top: 20px;
+}
+
+.contact-form input {
+  width: 40%;
+}
+
+.form-q {
+  width: 40%;
+  height: 60px;
+}
+
+.contact-submit {
+  display: inline-block;
+  border-radius: 45%;
+  /* 角丸       */
+  font-size: 1.4rem;
+  /* 文字サイズ */
+  text-align: center;
+  /* 文字位置   */
+  cursor: pointer;
+  /* カーソル   */
+  padding: 12px 21px;
+  /* 余白       */
+  background: rgba(0, 0, 102, 0.81);
+  /* 背景色     */
+  color: rgba(255, 255, 255, 0.91);
+  /* 文字色     */
+  line-height: 1em;
+  /* 1行の高さ  */
+  box-shadow: 6px 6px 3px #666666;
+  /* 影の設定 */
+  border: 2px solid rgba(0, 0, 102, 0.81);
+  /* 枠の指定 */
+  transition: opacity .3s;
+}
+
+.contact-submit:hover {
+  opacity: 0.6;
+}
+
+.access-wrap {
+  margin-top: 2.5rem;
+}
+
+.access-wrap .access-item {
+  display: flex;
+}
+
+.access-wrap .access-item p {
+  padding-left: 20px;
+}
+
+.footer {
+  background-color: #99FFCC;
+}
+
+.footer .inner {
+  padding: 0;
+  margin-top: 60px;
+  color: #707070;
+}
+
+.ft-tw {
+  font-size: 25px;
+}
+/*# sourceMappingURL=main.css.map */
