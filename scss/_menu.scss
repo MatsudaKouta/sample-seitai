@@ -3,9 +3,10 @@
   display: flex;
   justify-content: space-between;
   .menu-item {
+      width: 100%;
     img {
       height: 160px;
-      width: 200px;
+    width: 95%
     }
     .menu-title {
       font-size: 1.6rem;

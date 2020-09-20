@@ -205,9 +205,13 @@ header {
   justify-content: space-between;
 }
 
+.menu-wrap .menu-item {
+  width: 100%;
+}
+
 .menu-wrap .menu-item img {
   height: 160px;
-  width: 200px;
+  width: 95%;
 }
 
 .menu-wrap .menu-item .menu-title {
