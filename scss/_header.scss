@@ -9,9 +9,38 @@ header {
     li {
       font-size: 1.6rem;
       color: #707070;
+      @include tab {
+        display: none;
+      }
     }
     li:not(:first-child) {
       padding-left: 8px;
     }
   }
+}
+
+#h-menu {
+  display: none;
+  text-align-last: right;
+  font-size: 3.2rem;
+  cursor: pointer;
+  @include tab {
+    display: block;
+  }
+}
+
+.sp-close {
+  display: none;
+}
+
+.sp-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 64px;
+  font-size: 1.6rem;
 }

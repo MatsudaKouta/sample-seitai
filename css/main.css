@@ -173,8 +173,43 @@ header {
   color: #707070;
 }
 
+@media screen and (max-width: 959px) {
+  .pc-nav ul li {
+    display: none;
+  }
+}
+
 .pc-nav ul li:not(:first-child) {
   padding-left: 8px;
+}
+
+#h-menu {
+  display: none;
+  text-align-last: right;
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 959px) {
+  #h-menu {
+    display: block;
+  }
+}
+
+.sp-close {
+  display: none;
+}
+
+.sp-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  padding: 64px;
+  font-size: 1.6rem;
 }
 
 .first-v {
@@ -288,8 +323,21 @@ header {
   display: flex;
 }
 
+@media screen and (max-width: 600px) {
+  .access-wrap .access-item {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
 .access-wrap .access-item p {
   padding-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .g-map {
+    width: 100%;
+  }
 }
 
 .footer {
