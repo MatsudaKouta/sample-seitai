@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Noto+Sans+JP:400,700"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/c30333f671.js"
       crossorigin="anonymous"
@@ -24,15 +27,15 @@
             <li><a href="#access">アクセス</a></li>
           </ul>
         </nav>
-        <i class="fas fa-bars" id='h-menu'></i>
-         <nav class='sp-nav'>
-          <div id="close" class='sp-close'>
+        <i class="fas fa-bars" id="h-menu"></i>
+        <nav class="sp-nav">
+          <div id="close" class="sp-close">
             <ul>
-            <li><a href="#about">〇〇整体院について</a></li>
-            <li><a href="#menu">施術メニュー</a></li>
-            <li><a href="#practitioner">施術者</a></li>
-            <li><a href="#contact">ご予約</a></li>
-            <li><a href="#access">アクセス</a></li>
+              <li><a href="#about">〇〇整体院について</a></li>
+              <li><a href="#menu">施術メニュー</a></li>
+              <li><a href="#practitioner">施術者</a></li>
+              <li><a href="#contact">ご予約</a></li>
+              <li><a href="#access">アクセス</a></li>
             </ul>
           </div>
         </nav>
@@ -42,7 +45,7 @@
     <main>
       <section class="first-v">
         <div class="first-v__wrap">
-          <h2 class="main-title">体と。<br>心を。<br>癒す整体</h2>
+          <h2 class="main-title">体と。<br />心を。<br />癒す<br />整体</h2>
           <div class="first-txt">
             <p>日ごろの体の疲れ・凝りをほぐしたい方</p>
             <p>産後の骨盤を矯正したい方</p>
@@ -63,28 +66,38 @@
             <p>〇疲れ・凝りを取りたい方</p>
             <p>〇産後の骨盤を矯正したい方</p>
             <p>〇ストレスで節々に不調を感じる方</p>
+            <p>☆託児応相談です！</p>
           </div>
         </div>
       </section>
 
       <section id="menu">
         <div class="inner">
-          <h3 class="sub-title">施術メニュー</h3>
+          <h3 class="sub-title">施術について</h3>
           <div class="menu-wrap">
             <div class="menu-item">
-              <img src="img/sample2.jpg" alt="総合コースイメージ写真です">
+              <img src="img/sample2.jpg" alt="総合コースイメージ写真です" />
               <h4 class="menu-title">総合コース</h4>
-              <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+              <p>
+                サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+              </p>
             </div>
             <div class="menu-item">
-              <img src="img/sample3.jpg" alt="骨盤矯正コースイメージ写真です">
+              <img src="img/sample3.jpg" alt="骨盤矯正コースイメージ写真です" />
               <h4 class="menu-title">骨盤矯正コース</h4>
-              <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+              <p>
+                サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+              </p>
             </div>
             <div class="menu-item">
-              <img src="img/sample1.jpg" alt="ストレス解消コースイメージ写真です">
+              <img
+                src="img/sample1.jpg"
+                alt="ストレス解消コースイメージ写真です"
+              />
               <h4 class="menu-title">ストレス解消コース</h4>
-              <p>サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル</p>
+              <p>
+                サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
+              </p>
             </div>
           </div>
         </div>
@@ -119,6 +132,15 @@
                   name="$お名前"
                   placeholder="例：吉川真奈美"
                 />
+                <div class="contact-item">
+                  <p>お電話番号</p>
+                  <input
+                    id="tel"
+                    type="text"
+                    name="$tel"
+                    placeholder="例：〇〇〇ー〇〇〇〇ー〇〇〇〇
+                  />
+                </div>
               </div>
               <div class="contact-item">
                 <p>メールアドレス</p>
@@ -130,12 +152,12 @@
                 />
               </div>
               <div class="contact-item">
-                <p>お問い合わせ内容</p>
-                <textarea
-                  id="question"
-                  name="$問い合わせ内容"
-                  class="form-q"
-                ></textarea>
+                <p>ご希望の日にち</p>
+                <input id="date" type="date" name="$日にち" />
+              </div>
+              <div class="contact-item">
+                <p>希望時間(10：00～16：00)</p>
+                <input id="time" name="$希望時間" placeholder="例：10：00～"/>
               </div>
               <input type="text" name="honeypot" style="display: none" />
               <input
@@ -146,7 +168,7 @@
               <input
                 type="hidden"
                 name="subject"
-                value="portfolioサイトからの問い合わせ"
+                value="サイトからの予約"
               />
               <input type="hidden" name="replyTo" value="@" />
               <input
