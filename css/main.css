@@ -156,6 +156,11 @@ p {
   color: #707070;
 }
 
+.form-q {
+  width: 40%;
+  height: 60px;
+}
+
 header {
   margin: 30px;
 }
@@ -236,22 +241,11 @@ header {
 
 .menu-wrap {
   margin-top: 2.5rem;
-  display: flex;
-  justify-content: space-between;
 }
 
-.menu-wrap .menu-item {
-  width: 100%;
-}
-
-.menu-wrap .menu-item img {
-  height: 160px;
-  width: 95%;
-}
-
-.menu-wrap .menu-item .menu-title {
-  font-size: 1.6rem;
-  color: #707070;
+.menu-price {
+  font-size: 2.3rem;
+  margin-bottom: 1.2rem;
 }
 
 #practioner {
@@ -269,6 +263,11 @@ header {
   margin-right: 20px;
 }
 
+.prac-name {
+  font-size: 2.3em;
+  margin-bottom: 1.2rem;
+}
+
 .contact-wrap {
   margin-top: 2.5rem;
 }
@@ -279,11 +278,6 @@ header {
 
 .contact-form input {
   width: 40%;
-}
-
-.form-q {
-  width: 40%;
-  height: 60px;
 }
 
 .contact-submit {
@@ -314,6 +308,10 @@ header {
 
 .contact-submit:hover {
   opacity: 0.6;
+}
+
+.counseling-wrap {
+  margin-top: 2.5rem;
 }
 
 .access-wrap {

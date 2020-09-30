@@ -21,7 +21,7 @@
         <nav class="pc-nav">
           <ul>
             <li><a href="#about">〇〇整体院について</a></li>
-            <li><a href="#menu">施術メニュー</a></li>
+            <li><a href="#menu">施術について</a></li>
             <li><a href="#practitioner">施術者</a></li>
             <li><a href="#contact">ご予約</a></li>
             <li><a href="#access">アクセス</a></li>
@@ -32,7 +32,7 @@
           <div id="close" class="sp-close">
             <ul>
               <li><a href="#about">〇〇整体院について</a></li>
-              <li><a href="#menu">施術メニュー</a></li>
+              <li><a href="#menu">施術について</a></li>
               <li><a href="#practitioner">施術者</a></li>
               <li><a href="#contact">ご予約</a></li>
               <li><a href="#access">アクセス</a></li>
@@ -75,30 +75,11 @@
         <div class="inner">
           <h3 class="sub-title">施術について</h3>
           <div class="menu-wrap">
-            <div class="menu-item">
-              <img src="img/sample2.jpg" alt="総合コースイメージ写真です" />
-              <h4 class="menu-title">総合コース</h4>
-              <p>
-                サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
-              </p>
-            </div>
-            <div class="menu-item">
-              <img src="img/sample3.jpg" alt="骨盤矯正コースイメージ写真です" />
-              <h4 class="menu-title">骨盤矯正コース</h4>
-              <p>
-                サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
-              </p>
-            </div>
-            <div class="menu-item">
-              <img
-                src="img/sample1.jpg"
-                alt="ストレス解消コースイメージ写真です"
-              />
-              <h4 class="menu-title">ストレス解消コース</h4>
-              <p>
-                サンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプルサンプル
-              </p>
-            </div>
+            <p class="menu-price">料金一律〇〇円</p>
+            <p>決まったメニューはございません。</p>
+            <p>
+              お客様とのカウンセリングによってお客様に合ったメニューを作成します
+            </p>
           </div>
         </div>
       </section>
@@ -108,7 +89,12 @@
           <h3 class="sub-title">施術者</h3>
           <div class="prac-wrap">
             <img src="img/sezyutu.jpg" alt="施術者の写真" />
-            <p>吉川真奈美</p>
+            <div class="prac-item">
+              <p class="prac-name">吉川真奈美</p>
+              <p>
+                私自身、妊娠・出産を経験し、それらが身体にかかる負担の大きさを身をもって感じました。お産の後は休む間もなく慣れない子育てが始まり身体はボロボロ。心の余裕もない。そんなママたちの身体のケアをしたいという思いから整体院を立ち上げました。出産前後や女性の身体のトラブルをケアできる場所があるということをまず知っていただければ幸いです。
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -119,6 +105,7 @@
           <div class="contact-wrap">
             <p>ご予約・お体の相談は下記まで</p>
             <p>下記フォームへの入力をお願いいたします。</p>
+            <p>一両日中にメールにて返信させていただきます。</p>
             <form
               action="https://api.staticforms.xyz/submit"
               method="post"
@@ -134,12 +121,8 @@
                 />
                 <div class="contact-item">
                   <p>お電話番号</p>
-                  <input
-                    id="tel"
-                    type="text"
-                    name="$tel"
-                    placeholder="例：〇〇〇ー〇〇〇〇ー〇〇〇〇
-                  />
+                  <input id="tel" type="text" name="$tel"
+                  placeholder="例：〇〇〇-〇〇〇〇-〇〇〇〇"/>
                 </div>
               </div>
               <div class="contact-item">
@@ -157,7 +140,15 @@
               </div>
               <div class="contact-item">
                 <p>希望時間(10：00～16：00)</p>
-                <input id="time" name="$希望時間" placeholder="例：10：00～"/>
+                <input id="time" name="$希望時間" placeholder="例：10：00～" />
+              </div>
+              <div class="contact-item">
+                <p>その他のご要望(気になること何でもどうぞ♪)</p>
+                <textarea
+                  name="$その他ご要望"
+                  id="request"
+                  class="form-q"
+                ></textarea>
               </div>
               <input type="text" name="honeypot" style="display: none" />
               <input
@@ -165,11 +156,50 @@
                 name="accessKey"
                 value="d8db9e64-8977-420b-970f-e6be661c1a5a"
               />
+              <input type="hidden" name="subject" value="サイトからの予約" />
+              <input type="hidden" name="replyTo" value="@" />
               <input
                 type="hidden"
-                name="subject"
-                value="サイトからの予約"
+                name="redirectTo"
+                value="file:///C:/Users/kou87/onedrive/portfolio/index.html"
               />
+              <input
+                id="submit"
+                type="submit"
+                value="送信"
+                class="contact-submit"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="counseling">
+        <div class="inner">
+          <h3 class="sub-title">ご相談</h3>
+          <div class="counseling-wrap">
+            <form
+              action="https://api.staticforms.xyz/submit"
+              method="post"
+              class="contact-form"
+            >
+              <div class="counseling-item">
+                <p>施術以外のご相談は何でもこちらへ。</p>
+                <textarea
+                  name="$ご相談"
+                  id="counseling"
+                  cols="50"
+                  rows="18"
+                  class="form-q"
+                ></textarea>
+              </div>
+              <input type="text" name="honeypot" style="display: none" />
+              <input
+                type="hidden"
+                name="accessKey"
+                value="d8db9e64-8977-420b-970f-e6be661c1a5a"
+              />
+              <input type="hidden" name="subject" value="サイトからの予約" />
               <input type="hidden" name="replyTo" value="@" />
               <input
                 type="hidden"
