@@ -47,8 +47,8 @@
         <div class="first-v__wrap">
           <h2 class="main-title">体と。<br />心を。<br />癒す<br />整体</h2>
           <div class="first-txt">
-            <p>日ごろの体の疲れ・凝りをほぐしたい方</p>
-            <p>産後の骨盤を矯正したい方</p>
+            <p>日ごろの疲れをとりたい方</p>
+            <p>産後の骨盤をケアしたい方</p>
             <p>リラックスしたい方</p>
             <p>それぞれの目的にあった施術をいたします。</p>
           </div>
@@ -63,10 +63,9 @@
               ひとりひとりの体の不調に対し真摯に向き合いベストな施術を提供いたします
             </p>
             <p>下の項目に当てはまる方はぜひ一度ご相談ください。</p>
-            <p>〇疲れ・凝りを取りたい方</p>
-            <p>〇産後の骨盤を矯正したい方</p>
-            <p>〇ストレスで節々に不調を感じる方</p>
-            <p>☆託児応相談です！</p>
+            <p>〇疲れ・身体の不調を感じる方</p>
+            <p>〇産後の骨盤ケア</p>
+            <p>〇日々ストレスを感じている方</p>
           </div>
         </div>
       </section>
@@ -75,7 +74,7 @@
         <div class="inner">
           <h3 class="sub-title">施術について</h3>
           <div class="menu-wrap">
-            <p class="menu-price">料金一律〇〇円</p>
+            <p class="menu-price">オープン特別価格6,000円(通常4,000円)</p>
             <p>決まったメニューはございません。</p>
             <p>
               お客様とのカウンセリングによってお客様に合ったメニューを作成します
@@ -88,7 +87,7 @@
         <div class="inner">
           <h3 class="sub-title">施術者</h3>
           <div class="prac-wrap">
-            <img src="img/sezyutu.jpg" alt="施術者の写真" />
+            <img src="img/施術者.jpg" alt="施術者の写真" />
             <div class="prac-item">
               <p class="prac-name">吉川真奈美</p>
               <p>
@@ -103,73 +102,75 @@
         <div class="inner">
           <h3 class="sub-title">ご予約</h3>
           <div class="contact-wrap">
-            <p>ご予約・お体の相談は下記まで</p>
-            <p>下記フォームへの入力をお願いいたします。</p>
+            <p>ご予約・お体の相談は下記フォームへの入力をお願いいたします。</p>
             <p>一両日中にメールにて返信させていただきます。</p>
-            <form
-              action="https://api.staticforms.xyz/submit"
-              method="post"
-              class="contact-form"
-            >
-              <div class="contact-item">
-                <p>お名前</p>
-                <input
-                  id="patient"
-                  type="text"
-                  name="$お名前"
-                  placeholder="例：吉川真奈美"
-                />
+            <p>※都合によりご希望の日程・時間帯に沿えないことがありますのでご了承ください。</p>
+            <div class = center>
+              <form
+                action="https://api.staticforms.xyz/submit"
+                method="post"
+                class="contact-form"
+              >
                 <div class="contact-item">
-                  <p>お電話番号</p>
-                  <input id="tel" type="text" name="$tel"
-                  placeholder="例：〇〇〇-〇〇〇〇-〇〇〇〇"/>
+                  <p>お名前</p>
+                  <input
+                    id="patient"
+                    type="text"
+                    name="$お名前"
+                    placeholder="例：吉川真奈美"
+                  />
+                  <div class="contact-item">
+                    <p>お電話番号</p>
+                    <input id="tel" type="text" name="$tel"
+                    placeholder="例：〇〇〇-〇〇〇〇-〇〇〇〇"/>
+                  </div>
                 </div>
-              </div>
-              <div class="contact-item">
-                <p>メールアドレス</p>
+                <div class="contact-item">
+                  <p>メールアドレス</p>
+                  <input
+                    id="email"
+                    type="text"
+                    name="$email"
+                    placeholder="例：〇〇@〇〇.jp"
+                  />
+                </div>
+                <div class="contact-item">
+                  <p>ご希望の日にち</p>
+                  <input id="date" type="date" name="$日にち" />
+                </div>
+                <div class="contact-item">
+                  <p>希望時間(10：00～16：00)</p>
+                  <input id="time" name="$希望時間" placeholder="例：10：00～" />
+                </div>
+                <div class="contact-item">
+                  <p>その他のご要望(気になること何でもどうぞ♪)</p>
+                  <textarea
+                    name="$その他ご要望"
+                    id="request"
+                    class="form-q"
+                  ></textarea>
+                </div>
+                <input type="text" name="honeypot" style="display: none" />
                 <input
-                  id="email"
-                  type="text"
-                  name="$email"
-                  placeholder="例：〇〇@〇〇.jp"
+                  type="hidden"
+                  name="accessKey"
+                  value="d8db9e64-8977-420b-970f-e6be661c1a5a"
                 />
-              </div>
-              <div class="contact-item">
-                <p>ご希望の日にち</p>
-                <input id="date" type="date" name="$日にち" />
-              </div>
-              <div class="contact-item">
-                <p>希望時間(10：00～16：00)</p>
-                <input id="time" name="$希望時間" placeholder="例：10：00～" />
-              </div>
-              <div class="contact-item">
-                <p>その他のご要望(気になること何でもどうぞ♪)</p>
-                <textarea
-                  name="$その他ご要望"
-                  id="request"
-                  class="form-q"
-                ></textarea>
-              </div>
-              <input type="text" name="honeypot" style="display: none" />
-              <input
-                type="hidden"
-                name="accessKey"
-                value="d8db9e64-8977-420b-970f-e6be661c1a5a"
-              />
-              <input type="hidden" name="subject" value="サイトからの予約" />
-              <input type="hidden" name="replyTo" value="@" />
-              <input
-                type="hidden"
-                name="redirectTo"
-                value="file:///C:/Users/kou87/onedrive/portfolio/index.html"
-              />
-              <input
-                id="submit"
-                type="submit"
-                value="送信"
-                class="contact-submit"
-              />
-            </form>
+                <input type="hidden" name="subject" value="サイトからの予約" />
+                <input type="hidden" name="replyTo" value="@" />
+                <input
+                  type="hidden"
+                  name="redirectTo"
+                  value="file:///C:/Users/kou87/onedrive/portfolio/index.html"
+                />
+                <input
+                  id="submit"
+                  type="submit"
+                  value="送信"
+                  class="contact-submit"
+                />
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -177,7 +178,7 @@
       <section id="counseling">
         <div class="inner">
           <h3 class="sub-title">ご相談</h3>
-          <div class="counseling-wrap">
+          <div class="counseling-wrap center">
             <form
               action="https://api.staticforms.xyz/submit"
               method="post"
@@ -234,8 +235,7 @@
                 class="g-map"
               ></iframe>
               <div class="access-p">
-                <p>北総線矢切駅徒歩20分</p>
-                <p>JR松戸駅バス10分</p>
+                <p>上矢切バス停より徒歩5分</p>
                 <p>tel 〇〇〇ー〇〇ー〇〇〇〇</p>
               </div>
             </div>
@@ -255,12 +255,14 @@
             <li><a href="#access">アクセス</a></li>
           </ul>
         </nav>
-        <p>
-          copyright © 〇〇seitai, All Right Reserved.　　<a href="#"
-            ><i class="fab fa-twitter-square ft-tw"></i
-          ></a>
-        </p>
-      </div>
+        <div class="center">
+          <p>
+            copyright © 〇〇seitai, All Right Reserved.　　<a href="#"
+              ><i class="fab fa-twitter-square ft-tw"></i
+            ></a>
+          </p>
+        </div>
+        </div>
     </footer>
 
     <script src="main.js"></script>

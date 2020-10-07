@@ -147,8 +147,12 @@ body {
 
 .inner {
   padding-top: 150px;
-  width: 83%;
+  width: 50%;
   margin: 0 auto;
+  text-align: left;
+}
+
+.center {
   text-align: center;
 }
 
@@ -254,13 +258,10 @@ header {
 
 .prac-wrap {
   margin-top: 2.5rem;
-  display: flex;
-  justify-content: center;
 }
 
 .prac-wrap img {
-  width: 30%;
-  margin-right: 20px;
+  width: 100%;
 }
 
 .prac-name {
