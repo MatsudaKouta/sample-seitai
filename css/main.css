@@ -127,12 +127,6 @@ body {
   color: #707070;
 }
 
-.main-title {
-  font-size: 3.8rem;
-  line-height: 3.8rem;
-  color: #707070;
-}
-
 .sub-title {
   margin-bottom: 30px;
   font-weight: bold;
@@ -224,7 +218,9 @@ header {
 .first-v {
   width: 100%;
   height: 400px;
-  background-color: #99FFCC;
+  position: relative;
+  background: url("../img/g4.jpg") no-repeat 0 0/cover;
+  background-position: 100%;
   max-width: 100%;
 }
 
@@ -237,6 +233,29 @@ header {
 
 .first-v__wrap h2 {
   padding-right: 20px;
+}
+
+.first-v__wrap .main-title {
+  z-index: 1;
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  color: #ffff99;
+}
+
+.first-v__wrap .first-txt p {
+  position: relative;
+  color: #ffff99;
+  z-index: 100;
+}
+
+.overlay1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .about-wrap {
@@ -267,6 +286,29 @@ header {
 .prac-name {
   font-size: 2.3em;
   margin-bottom: 1.2rem;
+}
+
+.gallery-wrap {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 959px) {
+  .gallery-wrap {
+    display: block;
+  }
+}
+
+.gallery-wrap .g-img {
+  width: 50%;
+}
+
+@media screen and (max-width: 959px) {
+  .gallery-wrap .g-img {
+    width: 100%;
+  }
 }
 
 .contact-wrap {
@@ -323,18 +365,21 @@ header {
   display: flex;
 }
 
-@media screen and (max-width: 600px) {
-  .access-wrap .access-item {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-
 .access-wrap .access-item p {
   padding-left: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 959px) {
+  .access-wrap .access-item {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .access-wrap .access-item p {
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 959px) {
   .g-map {
     width: 100%;
   }

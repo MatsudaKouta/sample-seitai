@@ -1,0 +1,16 @@
+.gallery-wrap{
+    margin-top: $mt;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include tab {
+        display: block;
+    }
+    .g-img {
+        width: 50%;
+        @include tab {
+            width: 100%;
+        }
+    }
+}
+

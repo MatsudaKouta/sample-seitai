@@ -44,7 +44,7 @@
 
     <main>
       <section class="first-v">
-        <div class="first-v__wrap">
+        <div class="first-v__wrap overlay1">
           <h2 class="main-title">体と。<br />心を。<br />癒す<br />整体</h2>
           <div class="first-txt">
             <p>日ごろの疲れをとりたい方</p>
@@ -60,7 +60,7 @@
           <h3 class="sub-title">〇〇整体院について</h3>
           <div class="about-wrap">
             <p>
-              ひとりひとりの体の不調に対し真摯に向き合いベストな施術を提供いたします
+              ひとりひとりの体の不調に対し真摯に向き合いベストな施術を提供いたします。
             </p>
             <p>下の項目に当てはまる方はぜひ一度ご相談ください。</p>
             <p>〇疲れ・身体の不調を感じる方</p>
@@ -98,14 +98,28 @@
         </div>
       </section>
 
+      <section id="gallery">
+        <div class="inner">
+          <h3 class="sub-title">施術室イメージ</h3>
+          <div class="gallery-wrap">
+            <img src="img/g1.jpg" class="g-img" alt="施術台アップ" />
+            <img src="img/g2.jpg" class="g-img" alt="施術台アップ" />
+            <img src="img/g3.jpg" class="g-img" alt="施術台アップ" />
+            <img src="img/g4.jpg" class="g-img" alt="施術台アップ" />
+          </div>
+        </div>
+      </section>
+
       <section id="contact">
         <div class="inner">
           <h3 class="sub-title">ご予約</h3>
           <div class="contact-wrap">
             <p>ご予約・お体の相談は下記フォームへの入力をお願いいたします。</p>
             <p>一両日中にメールにて返信させていただきます。</p>
-            <p>※都合によりご希望の日程・時間帯に沿えないことがありますのでご了承ください。</p>
-            <div class = center>
+            <p>
+              ※都合によりご希望の日程・時間帯に沿えないことがありますのでご了承ください。
+            </p>
+            <div class="center">
               <form
                 action="https://api.staticforms.xyz/submit"
                 method="post"
@@ -121,8 +135,12 @@
                   />
                   <div class="contact-item">
                     <p>お電話番号</p>
-                    <input id="tel" type="text" name="$tel"
-                    placeholder="例：〇〇〇-〇〇〇〇-〇〇〇〇"/>
+                    <input
+                      id="tel"
+                      type="text"
+                      name="$tel"
+                      placeholder="例：〇〇〇-〇〇〇〇-〇〇〇〇"
+                    />
                   </div>
                 </div>
                 <div class="contact-item">
@@ -140,7 +158,11 @@
                 </div>
                 <div class="contact-item">
                   <p>希望時間(10：00～16：00)</p>
-                  <input id="time" name="$希望時間" placeholder="例：10：00～" />
+                  <input
+                    id="time"
+                    name="$希望時間"
+                    placeholder="例：10：00～"
+                  />
                 </div>
                 <div class="contact-item">
                   <p>その他のご要望(気になること何でもどうぞ♪)</p>
@@ -262,7 +284,7 @@
             ></a>
           </p>
         </div>
-        </div>
+      </div>
     </footer>
 
     <script src="main.js"></script>
