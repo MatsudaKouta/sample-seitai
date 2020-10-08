@@ -45,8 +45,11 @@ body {
     font-size: 1.8rem;
     color: #707070;
     text-align: center;
-    width: 70%;
+    width: 50%;
     margin:0 auto;
+    @include tab {
+      width: 80px;
+    }
 }
 
 .inner {
