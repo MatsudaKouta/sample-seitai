@@ -45,7 +45,7 @@ body {
     font-size: 1.8rem;
     color: #707070;
     text-align: center;
-    width: 50%;
+    width: 40%;
     margin:0 auto;
     @include tab {
       width: 100%;
@@ -53,10 +53,13 @@ body {
 }
 
 .inner {
+  width: 100% - 50%;
   padding-top: 150px;
-  width: 100% - 20%;
   margin: 0 auto;
   text-align: left;
+  @include tab {
+    width: 100% - 20%;
+  }
 }
 
 .center {
@@ -70,7 +73,7 @@ p {
 
 //textarea サイズ
 .form-q{
-    width: 40%;
+    width: 80%;
     height: 60px;
 }
 

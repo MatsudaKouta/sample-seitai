@@ -135,7 +135,7 @@ body {
   font-size: 1.8rem;
   color: #707070;
   text-align: center;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 
@@ -146,10 +146,16 @@ body {
 }
 
 .inner {
+  width: 50%;
   padding-top: 150px;
-  width: 80%;
   margin: 0 auto;
   text-align: left;
+}
+
+@media screen and (max-width: 959px) {
+  .inner {
+    width: 80%;
+  }
 }
 
 .center {
@@ -161,7 +167,7 @@ p {
 }
 
 .form-q {
-  width: 40%;
+  width: 80%;
   height: 60px;
 }
 
@@ -178,7 +184,7 @@ header {
 }
 
 .pc-nav ul li {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #707070;
 }
 
@@ -219,6 +225,7 @@ header {
   text-align: center;
   padding: 64px;
   font-size: 1.6rem;
+  z-index: 1;
 }
 
 .first-v {
@@ -319,6 +326,7 @@ header {
 
 .contact-wrap {
   margin-top: 2.5rem;
+  position: relative;
 }
 
 .contact-item {
@@ -326,7 +334,7 @@ header {
 }
 
 .contact-form input {
-  width: 40%;
+  width: 80%;
 }
 
 .contact-submit {
@@ -359,6 +367,17 @@ header {
   opacity: 0.6;
 }
 
+submitDesign {
+  font-size: 20px;
+  width: 600px;
+  height: 200px;
+  border: solid 6px #707070;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .counseling-wrap {
   margin-top: 2.5rem;
 }
@@ -367,32 +386,8 @@ header {
   margin-top: 2.5rem;
 }
 
-.access-wrap .access-item {
-  display: flex;
-}
-
-.access-wrap .access-item p {
-  padding-left: 20px;
-}
-
-@media screen and (max-width: 959px) {
-  .access-wrap .access-item {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .access-wrap .access-item p {
-    padding-left: 0px;
-  }
-}
-
-@media screen and (max-width: 959px) {
-  .g-map {
-    width: 100%;
-  }
-}
-
 .footer {
-  background-color: #99FFCC;
+  background-color: #b0c4de;
 }
 
 .footer .inner {
@@ -401,7 +396,7 @@ header {
   color: #707070;
 }
 
-.ft-tw {
+.ft-icon {
   font-size: 25px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,22 +1,10 @@
 .access-wrap {
   margin-top: $mt;
-  .access-item {
-    display: flex;
-    p {
-      padding-left: 20px;
-    }
-    @include tab {
-      flex-direction: column;
-      justify-content: space-between;
-      p{
-          padding-left:0px;
-      }
-    }
-  }
-}
+  .access-p {
 
-.g-map {
-  @include tab {
-    width: 100%;
   }
-}
+    @include tab {
+    }
+  }
+
+

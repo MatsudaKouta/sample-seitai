@@ -1,5 +1,6 @@
 .contact-wrap {
     margin-top: $mt;
+    position: relative;
 }
 
 .contact-item {
@@ -8,7 +9,7 @@
 
 .contact-form{
 input{
-width: 40%;
+width: 80%;
 }
 }
 
@@ -31,4 +32,13 @@ width: 40%;
   }
 }
 
-
+submitDesign {
+font-size: 20px;
+width: 600px;
+height: 200px;
+border: solid 6px #707070;
+position: absolute;
+top: 50%;
+left: 50%;
+transform : translate(-50%,-50%);
+}
