@@ -207,17 +207,26 @@
             <form
               action="https://api.staticforms.xyz/submit"
               method="post"
-              class="contact-form"
+              class="contact-form-c"
             >
               <div class="counseling-item">
                 <p>施術以外のご相談は何でもこちらへ。</p>
                 <textarea
                   name="$ご相談"
-                  id="counseling"
+                  id="counsel"
                   cols="50"
                   rows="18"
                   class="form-q"
                 ></textarea>
+              </div>
+              <div class="counseling-item">
+                  <p>メールアドレス</p>
+                  <input
+                    id="email-c"
+                    type="text"
+                    name="$email"
+                    placeholder="〇〇@〇〇.jp"
+                  />
               </div>
               <input type="text" name="honeypot" style="display: none" />
               <input
