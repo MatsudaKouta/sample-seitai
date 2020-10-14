@@ -32,8 +32,7 @@
       tel.value === "" ||
       email.value === "" ||
       date.value === "" ||
-      time.value === "" ||
-      request.value === ""
+      time.value === ""
     ) {
       e.preventDefault();
       alert("項目に入力をお願いします");
